@@ -484,6 +484,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .current-work-list li {
@@ -491,6 +493,7 @@ img {
   flex-direction: column;
   gap: 2px;
   padding: 16px 0;
+  margin: 0;
   position: relative;
 }
 
@@ -525,7 +528,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--crimson);
-  margin-top: 28px;
+  margin-top: 32px;
   margin-bottom: 0;
   padding-left: 0;
   padding-bottom: 10px;
@@ -533,8 +536,8 @@ img {
 }
 
 .cw-divider {
-  border-top: 1px solid var(--gray-200);
-  margin: 0 0 24px 0;
+  margin: 0;
+  height: 0;
 }
 
 .cw-row {
