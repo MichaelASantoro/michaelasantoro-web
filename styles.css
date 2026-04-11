@@ -99,6 +99,34 @@ img {
   color: var(--crimson);
 }
 
+.nav-links a.nav-external {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links a.nav-external span {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.nav-links a.nav-external:hover span {
+  transform: translateX(-8px);
+}
+
+.nav-links a.nav-external::after {
+  content: "\2192";
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.nav-links a.nav-external:hover::after {
+  opacity: 1;
+  transform: translateX(8px);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -357,6 +385,36 @@ img {
   padding-top: 32px;
 }
 
+.about-strip {
+  padding: 18px 20px;
+  background: #F7F7F5;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-strip p {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #888888;
+  text-align: center;
+  margin: 0;
+}
+
+.about-strip p a {
+  color: var(--crimson);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.about-strip p a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--crimson);
+}
+
 /* ── Expandable Sections ─────────────────────────────── */
 .expandable .expandable-content {
   overflow: hidden;
@@ -471,6 +529,11 @@ img {
 
 .about-bio p:last-child {
   margin-bottom: 0;
+}
+
+.about-readmore {
+  display: inline-block;
+  margin-top: 24px;
 }
 
 /* ── Current Work ────────────────────────────────────── */
